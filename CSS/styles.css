@@ -139,7 +139,8 @@ a {
     padding: 0rem;
   }
 }
-/*icons*/
+/*icons */
+
 .icon {
   width: 40px;
   height: 40px;
@@ -167,6 +168,11 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container,
+.icon-container--dark {
+  background: var(--color-body-darker);
 }
 
 /*buttons*/
@@ -485,4 +491,35 @@ a {
     justify-self: start;
     margin: 2rem 0;
   }
+}
+/*collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
