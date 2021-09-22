@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 H1 {
   /*1 times the font size of the HTML element. So 1 rem becomes 10px. if H1 is set to 70px by the designer that means 7rem will be the relative size here
@@ -620,4 +621,31 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
+}
+
+/*Hero*/
+.hero {
+  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+  color: #b9c3cf;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
 }
