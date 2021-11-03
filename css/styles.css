@@ -342,10 +342,6 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
 .plan--popular .card__header {
   position: relative;
 }
@@ -375,6 +371,9 @@ a {
   }
   .plan__billing-cycle {
     font-size: 1.6rem;
+  }
+  .plan--popular {
+    transform: scale(1.1);
   }
 }
 /*Media*/
@@ -722,7 +721,7 @@ a {
 
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem;
+  margin: 12rem 0rem;
 }
 
 .feature__image {
@@ -732,6 +731,9 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+  .feature {
+    margin: 12rem;
   }
 }
 
