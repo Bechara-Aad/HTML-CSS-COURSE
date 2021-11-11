@@ -160,9 +160,6 @@ a {
 .icon--white {
   fill: #fff;
 }
-.icon-container--accent {
-  background: var(--color-accent);
-}
 
 .icon--small {
   width: 30px;
@@ -177,6 +174,10 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /*buttons*/
