@@ -31,8 +31,9 @@ Html {
 body {
   font-family: inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
+  margin: 0;
 }
 h1,
 h2,
@@ -367,7 +368,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .plan__name {
-    font-size: 5rem;
+    font-size: 1.4rem;
   }
   .plan__price {
     font-size: 5rem;
@@ -396,6 +397,7 @@ a {
 }
 
 /*Quotes*/
+
 .quote {
   font-size: 3rem;
   font-style: italic;
@@ -462,6 +464,12 @@ a {
   padding: 3rem;
 }
 
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
+  padding: 0 2rem 2rem 2rem;
+}
+
 .testimonial__image > img {
   width: 100%;
 }
@@ -474,14 +482,13 @@ a {
 
 .testimonial__image {
   position: relative;
+  margin: 0 2rem;
 }
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
-  }
-  .testimonial .quote {
-    margin-left: 6rem;
+    margin: 5rem 0 0;
   }
 }
 
@@ -582,11 +589,11 @@ a {
   color: #fff;
 }
 .block--skewed-left {
-  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 95%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -734,9 +741,6 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
-  }
-  .feature {
-    margin: 12rem;
   }
 }
 
