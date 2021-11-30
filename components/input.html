@@ -1,26 +1,56 @@
-/*Basic text inputs*/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Deploy your website in less than 60 seconds"
+    />
+    <meta property="og:title" content="Moshify..." />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://www.moshified.com/" />
+    <meta property="og:description" content="Moshify..." />
 
-<input type="text" class="input" placeholder="Enter Domain name here" />
+    <meta property="og:image" content="https://" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Moshify - Go Online for Just 9$</title>
+  </head>
+  <body>
+    /*Basic text inputs*/
 
-/*Basic text inputs*/
+    <input type="text" class="input" placeholder="Enter Domain name here" />
 
-<div class="input-group">
-  <input
-    type="text"
-    class="input"
-    aria-label="Domain"
-    placeholder="Enter Domain name here"
-  />
-  <button class="btn btn--accent">Search</button>
-</div>
+    /*Basic text inputs*/
 
-/*input groups: Input inside a container*/
-<div class="input-group">
-  <span class="icon-container">
-    <svg class="icon icon--primary">
-      <use xlink:href="images/sprite.svg#wordpress"></use>
-    </svg>
-  </span>
-  <input type="text" class="input" placeholder="Enter Domain name here" />
-  <button class="btn btn--accent">Search</button>
-</div>
+    <div class="input-group">
+      <input
+        type="text"
+        class="input"
+        aria-label="Domain"
+        placeholder="Enter Domain name here"
+      />
+      <button class="btn btn--accent">Search</button>
+    </div>
+
+    /*input groups: Input inside a container*/
+
+    <div class="input-group">
+      <input type="text" class="input" placeholder="Enter Domain name here" />
+      <button class="btn btn--accent">
+        <svg class="icon icon--white">
+          <use href="/images/sprite.svg#search"></use>
+        </svg>
+        Search
+      </button>
+    </div>
+  </body>
+</html>

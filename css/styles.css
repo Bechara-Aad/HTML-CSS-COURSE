@@ -287,6 +287,8 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Cards */
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
@@ -848,6 +850,7 @@ a {
     font-size: 1.6rem;
   }
 }
+
 /* Sign-up Callout */
 .callout-signup {
   transform: translateY(5rem);
